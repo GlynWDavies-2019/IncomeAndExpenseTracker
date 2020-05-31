@@ -25,21 +25,7 @@
         </div>
         <h3>History</h3>
         <ul id="list" class="list">
-            <!-- Fake Data -->
-            <li class="plus">
-                Salary 
-                <span>-400</span>
-                <button class="delete-btn">
-                    <i class="far fa-trash-alt"></i>
-                </button>
-            </li>
-            <li class="minus">
-                Cash 
-                <span>-400</span>
-                <button class="delete-btn">
-                    <i class="far fa-trash-alt"></i>
-                </button>
-            </li>
+            <!-- Items inserted dynamically -->
         </ul>
         <h3>Add New Transaction</h3>
         <form id="form">
@@ -49,11 +35,11 @@
             </div>
             <div class="form-control">
                 <label for="amount">
-                    Amount<br>(negative - expense, positive - income)
+                    Amount
                 </label>
                 <input type="number" id="amount" placeholder="Enter amount...">
             </div>
-            <button class="btn">Add Transaction</button>
+            <button type="submit" class="btn">Add Transaction</button>
         </form>
     </div>
     <script src="script.js"></script>
