@@ -81,3 +81,81 @@ h4 {
 .money.minus {
     color: #C0392B;
 }
+
+label {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+input[type = 'text'],
+input[type = 'number'] {
+    border: 1px solid #DEDEDE;
+    border-radius: 2px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+.btn {
+    background-color: #9C88FF;
+    border: 0;
+    box-shadow: var(--box-shadow);
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    margin: 10px 0 30px;
+    padding: 10px;
+    width: 100%;
+}
+
+.btn:focus,
+.delete-btn:focus {
+    outline:0;
+}
+
+.list {
+    list-style-type: none;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.list li {
+    background-color: #FFFFFF;
+    box-shadow: var(--box-shadow);
+    color: #333333;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    position: relative;
+}
+
+.list li.plus {
+    border-right: 5px solid #2ECC71;
+}
+
+.list li.minus {
+    border-right: 5px solid #C0392B;
+}
+
+.delete-btn {
+    background-color: #E74C3C;
+    border: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 20px;
+    left: 0;
+    line-height: 20px;
+    opacity: 0;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-100%, -50%);
+    transition: opacity 0.3s ease;
+}
+
+.list li:hover .delete-btn {
+    opacity: 1;
+}
