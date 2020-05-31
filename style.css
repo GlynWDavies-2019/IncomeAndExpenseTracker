@@ -82,6 +82,8 @@ h4 {
     color: #C0392B;
 }
 
+/* Form */
+
 label {
     display: inline-block;
     margin: 10px 0;
@@ -98,7 +100,7 @@ input[type = 'number'] {
 }
 
 .btn {
-    background-color: #9C88FF;
+    background-color: #067BC2;  
     border: 0;
     box-shadow: var(--box-shadow);
     color: #FFFFFF;
@@ -146,10 +148,10 @@ input[type = 'number'] {
     color: #FFFFFF;
     cursor: pointer;
     font-size: 20px;
-    left: 0;
+    left: -2.5%;
     line-height: 20px;
     opacity: 0;
-    padding: 2px 5px;
+    padding: 5px 5px;
     position: absolute;
     top: 50%;
     transform: translate(-100%, -50%);
